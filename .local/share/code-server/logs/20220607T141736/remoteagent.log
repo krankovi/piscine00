@@ -181,3 +181,5 @@
 [2022-06-07 14:17:37.865] [main] [warning] [File Watcher (chokidar)] Error: EMFILE: too many open files, watch '/home/coder/.local/share/code-server/extensions/kube.42header-0.42.9/out/src/delimiters.js'
 [2022-06-07 14:17:37.865] [main] [warning] [File Watcher (chokidar)] Error: EMFILE: too many open files, watch '/home/coder/.local/share/code-server/extensions/kube.42header-0.42.9/out/src/extension.js'
 [2022-06-07 14:17:37.865] [main] [warning] [File Watcher (chokidar)] Error: EMFILE: too many open files, watch '/home/coder/.local/share/code-server/extensions/kube.42header-0.42.9/out/src/header.js'
+[2022-06-07 18:47:59.322] [main] [error] [File Watcher (node.js)] Failed to watch /home/coder/.local/share/code-server/User/keyboardLayout.json for changes using fs.watch() (Error: EMFILE: too many open files, watch '/home/coder/.local/share/code-server/User/keyboardLayout.json')
+[2022-06-07 18:47:59.325] [main] [error] [File Watcher (node.js)] Failed to watch /home/coder/.local/share/code-server/User/keyboardLayout.json for changes using fs.watch() (Error: EMFILE: too many open files, watch '/home/coder/.local/share/code-server/User/keyboardLayout.json')
