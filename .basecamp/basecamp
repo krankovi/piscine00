@@ -1,0 +1,61 @@
+BASECAMP_DIR=${HOME}/.basecamp/
+TEST_DIR=basecamp_warmup
+GIT_REPO=https://github.com/42sp/basecamp_warmup.git
+NORMINETTE=norminette
+SSH_PRIV_KEY_PATH=${HOME}/.ssh/id_rsa
+SSH_PUB_KEY_PATH=${HOME}/.ssh/id_rsa.pub
+CP='\033[0;35m'
+BW='\033[1;37m'
+CG='\033[1;32m'
+RESET='\033[0;0m'
+echo -e "\n\n\n\n\n"
+echo -e "${BW}                      @@@@@@@@@@@     @@@@@@@@@ @@@@@@@@@@  "
+echo -e "${BW}                    @@@@@@@@@@        @@@@@@@   @@@@@@@@@@  "
+echo -e "${BW}                 @@@@@@@@@@@          @@@@      @@@@@@@@@@  "
+echo -e "${BW}               @@@@@@@@@@             @@        @@@@@@@@@@  "
+echo -e "${BW}            @@@@@@@@@@@                         @@@@@@@@@@  "
+echo -e "${BW}          @@@@@@@@@@                         @@@@@@@@@@@    "
+echo -e "${BW}       @@@@@@@@@@@                         @@@@@@@@@@       "
+echo -e "${BW}     @@@@@@@@@@                         @@@@@@@@@@@         "
+echo -e "${BW}  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@            "
+echo -e "${BW}  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@        @@  "
+echo -e "${BW}  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@     @@@@@  "
+echo -e "${BW}  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     @@@@@@@@@@   @@@@@@@  "
+echo -e "${BW}                       @@@@@@@@@@     @@@@@@@@@@@@@@@@@@@@    |      _____ _____ _____ _____ _____ _____ _____ _____ "
+echo -e "${BW}                       @@@@@@@@@@                             |     / __  /  _  /   __/   __/     /  _  /     /  _  /"
+echo -e "${BW}                       @@@@@@@@@@                             |    / __ -/     /__   /   __/   --/     / / / /   __/"
+echo -e "${BW}                       @@@@@@@@@@                             |   /_____/__/__/_____/_____/_____/__/__/_/_/_/__/   "
+echo -e "\n"
+echo -e "${RESET}Testing git, please wait..."
+
+#### GIT CLONE TEST
+rm -rf ${BASECAMP_DIR}/${TEST_DIR} &>> /dev/null
+git clone ${GIT_REPO} ${BASECAMP_DIR}${TEST_DIR} &>> /dev/null
+
+echo -e "Testing gcc, please wait..."
+#### GCC TEST
+rm -rf .output > /dev/null
+make test -C ${BASECAMP_DIR}${TEST_DIR}  &>> ${BASECAMP_DIR}.output 
+make fclean -C ${BASECAMP_DIR}${TEST_DIR}  &>> ${BASECAMP_DIR}.output 
+
+#### NORMINETTE TEST
+echo -e "Testing norminette, please wait..."
+${NORMINETTE} ${BASECAMP_DIR}${TEST_DIR}/srcs/ &>> ${BASECAMP_DIR}.output
+
+#### SSH KEY PAIR TEST
+echo -e "Testing ssh keys generation, please wait..."
+if [ -f "$SSH_PRIV_KEY_PATH" ] || [ -f "$SSH_PUB_KEY_PATH" ]
+then
+    echo "$SSH_PRIV_KEY_PATH exists."
+    echo "Skip creation"
+else 
+    echo "$SSH_PRIV_KEY_PATH does not exist."
+    echo "Creating ssh-key pair"
+    mkdir -p ${HOME}/.ssh
+    ssh-keygen -q -t rsa -N '' -C "coder@$STUDENT_LOGIN" -f $SSH_PRIV_KEY_PATH <<<y 2>&1 >/dev/null
+    echo "Done"
+fi
+
+
+rm -rf ${BASECAMP_DIR}${TEST_DIR} &>> /dev/null
+echo -e "${CG}Tests performed successfully. Thank you, and welcome to 42 Basecamp!\n${RESET}"

@@ -1,0 +1,28 @@
+[2022-06-07 14:17:38.605] [exthost] [info] extension host started
+[2022-06-07 14:17:38.617] [exthost] [info] Lock '/home/coder/.local/share/code-server/User/workspaceStorage/-690b240e/vscode.lock': Lock acquired.
+[2022-06-07 14:17:38.706] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch {"startup":true,"extensionId":{"value":"vscode.debug-auto-launch","_lower":"vscode.debug-auto-launch"},"activationEvent":"*"}
+[2022-06-07 14:17:38.706] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code-server/vendor/modules/code-oss-dev/extensions/debug-auto-launch/dist/extension
+[2022-06-07 14:17:38.711] [exthost] [info] ExtensionService#_doActivateExtension vscode.git {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2022-06-07 14:17:38.711] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code-server/vendor/modules/code-oss-dev/extensions/git/dist/main
+[2022-06-07 14:17:38.796] [exthost] [info] ExtensionService#_doActivateExtension kube.42header {"startup":true,"extensionId":{"value":"kube.42header","_lower":"kube.42header"},"activationEvent":"*"}
+[2022-06-07 14:17:38.796] [exthost] [info] ExtensionService#loadCommonJSModule file:///home/coder/.local/share/code-server/extensions/kube.42header-0.42.9/out/src/extension
+[2022-06-07 14:17:38.926] [exthost] [info] ExtensionService#_doActivateExtension vscode.github {"startup":true,"extensionId":{"value":"vscode.github","_lower":"vscode.github"},"activationEvent":"*"}
+[2022-06-07 14:17:38.926] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code-server/vendor/modules/code-oss-dev/extensions/github/dist/extension.js
+[2022-06-07 14:17:39.007] [exthost] [info] ExtensionService#_doActivateExtension ms-vscode.js-debug {"startup":false,"extensionId":{"value":"ms-vscode.js-debug","_lower":"ms-vscode.js-debug"},"activationEvent":"onCommand:extension.js-debug.clearAutoAttachVariables"}
+[2022-06-07 14:17:39.007] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code-server/vendor/modules/code-oss-dev/extensions/ms-vscode.js-debug/src/extension.js
+[2022-06-07 14:17:39.209] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet {"startup":false,"extensionId":{"value":"vscode.emmet","_lower":"vscode.emmet"},"activationEvent":"onStartupFinished"}
+[2022-06-07 14:17:39.209] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code-server/vendor/modules/code-oss-dev/extensions/emmet/dist/node/emmetNodeMain
+[2022-06-07 14:17:39.223] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict {"startup":false,"extensionId":{"value":"vscode.merge-conflict","_lower":"vscode.merge-conflict"},"activationEvent":"onStartupFinished"}
+[2022-06-07 14:17:39.223] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code-server/vendor/modules/code-oss-dev/extensions/merge-conflict/dist/mergeConflictMain
+[2022-06-07 14:17:39.227] [exthost] [info] eager extensions activated
+[2022-06-07 14:26:01.302] [exthost] [info] ExtensionService#_doActivateExtension vscode.extension-editing {"startup":false,"extensionId":{"value":"vscode.extension-editing","_lower":"vscode.extension-editing"},"activationEvent":"onLanguage:markdown"}
+[2022-06-07 14:26:01.304] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code-server/vendor/modules/code-oss-dev/extensions/extension-editing/dist/extensionEditingMain
+[2022-06-07 14:26:01.323] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-language-features {"startup":false,"extensionId":{"value":"vscode.markdown-language-features","_lower":"vscode.markdown-language-features"},"activationEvent":"onLanguage:markdown"}
+[2022-06-07 14:26:01.323] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code-server/vendor/modules/code-oss-dev/extensions/markdown-language-features/dist/extension
+[2022-06-07 14:26:01.547] [exthost] [info] ExtensionService#_doActivateExtension vscode.markdown-math {"startup":false,"extensionId":{"value":"vscode.markdown-language-features","_lower":"vscode.markdown-language-features"},"activationEvent":"api"}
+[2022-06-07 14:26:01.547] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code-server/vendor/modules/code-oss-dev/extensions/markdown-math/dist/extension
+[2022-06-07 14:26:10.932] [exthost] [info] ExtensionService#_doActivateExtension vscode.github-authentication {"startup":false,"extensionId":{"value":"vscode.github-authentication","_lower":"vscode.github-authentication"},"activationEvent":"onAuthenticationRequest:github"}
+[2022-06-07 14:26:10.933] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code-server/vendor/modules/code-oss-dev/extensions/github-authentication/dist/extension.js
+[2022-06-07 14:33:18.693] [exthost] [warning] [Decorations] CAPPING events from decorations provider vscode.git 749
+[2022-06-07 14:35:21.753] [exthost] [info] ExtensionService#_doActivateExtension vscode.simple-browser {"startup":false,"extensionId":{"value":"vscode.simple-browser","_lower":"vscode.simple-browser"},"activationEvent":"onOpenExternalUri:https"}
+[2022-06-07 14:35:21.754] [exthost] [info] ExtensionService#loadCommonJSModule file:///usr/lib/code-server/vendor/modules/code-oss-dev/extensions/simple-browser/dist/extension

@@ -1,0 +1,26 @@
+{
+    "42header.username": "coder",
+    "42header.email": "coder@student.42.fr",
+    "editor.insertSpaces": false,
+    "editor.detectIndentation": false,
+    "workbench.colorTheme": "Default Dark+",
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": false,
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.environmentChangesIndicator": "off",
+    "files.exclude": {
+        "**/.*": true,
+        "**/.bash_profile": true,
+        "**/.bash*": true,
+        "**/.config": true,
+        "**/.local": true,
+        "**/.profile": true,
+        "**/.vscode": true,
+        "**/.cache": true,
+        "**/.dbus": true,
+        "**/.gnupg": true,
+        "**/.mozilla": true,
+        "**/.vnc": true
+    }
+}

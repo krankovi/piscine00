@@ -1,0 +1,9 @@
+[2022-06-07 14:16:46.507] [cli] [error] [File Watcher (node.js)] Failed to watch /home/coder/.local/share/code-server/User for changes using fs.watch() (Error: EMFILE: too many open files, watch '/home/coder/.local/share/code-server/User')
+[2022-06-07 14:16:46.507] [cli] [info] CLI main {"_":[],"bind-addr":"127.0.0.1:8080","auth":"password","password":"43098eRN7DTY6Z1F","config":"/home/coder/.config/code-server/config.yaml","install-extension":["kube.42header@0.42.9"],"user-data-dir":"/home/coder/.local/share/code-server","extensions-dir":"/home/coder/.local/share/code-server/extensions","host":"127.0.0.1","port":8080,"proxy-domain":[],"usingEnvPassword":false,"usingEnvHashedPassword":false,"logsPath":"/home/coder/.local/share/code-server/logs/20220607T141646"}
+[2022-06-07 14:16:46.509] [cli] [error] [File Watcher (node.js)] Failed to watch /home/coder/.local/share/code-server/extensions for changes using fs.watch() (Error: EMFILE: too many open files, watch '/home/coder/.local/share/code-server/extensions')
+[2022-06-07 14:16:48.251] [cli] [info] Installing extension: kube.42header
+[2022-06-07 14:16:49.137] [cli] [info] Downloaded extension: kube.42header /home/coder/.local/share/code-server/CachedExtensionVSIXs/kube.42header-0.42.9
+[2022-06-07 14:16:50.347] [cli] [info] Extracted extension to /home/coder/.local/share/code-server/extensions/.db43c0af-7e70-4fbf-8da3-b6a9f23d2707: kube.42header
+[2022-06-07 14:16:50.353] [cli] [info] Renamed to /home/coder/.local/share/code-server/extensions/kube.42header-0.42.9
+[2022-06-07 14:16:50.355] [cli] [info] Extracting completed. kube.42header
+[2022-06-07 14:16:50.360] [cli] [info] Extension installed successfully: kube.42header
